@@ -6,9 +6,11 @@
 
 import app from "../firebaseConfig";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { useRouter } from 'expo-router';
 
 const auth = getAuth(app);
 export const signup = (email, password) => {
+    const router = useRouter();
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed up 
@@ -16,7 +18,7 @@ export const signup = (email, password) => {
             // ...
             console.log(user)
             console.log("signup success")
-            window.location.href = '/profil';
+            router.replace('/profil')
         })
         .catch((error) => {
             // const errorCode = error.code;
@@ -34,7 +36,7 @@ export const signin = (email, password) => {
             // ...
             console.log(user)
             console.log("signup success")
-            window.location.href = '/profil';
+            router.replace('/profil')
         })
         .catch((error) => {
             // const errorCode = error.code;
