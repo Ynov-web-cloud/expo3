@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "experiments": {
+      "baseUrl": "/expo2"
+    },
+    "scheme": "web-cloud-ynov",
+    "name": "expo2",
+    "slug": "expo2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.niewtone.webcloudynov"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.niewtone.webcloudynov"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4fa15150-35eb-4a25-ab15-01abb63a1f93"
+      }
+    },
+    "owner": "niewtone",
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
