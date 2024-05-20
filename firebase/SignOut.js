@@ -11,9 +11,8 @@ const auth = getAuth();
 const router = useRouter()
 export default signOutUser = () => {
     signOut(auth).then(() => {
-        // Sign-out successful.
         router.replace("/authentication")
     }).catch((error) => {
-        // An error happened.
+        console.log(error)
     });
 }
