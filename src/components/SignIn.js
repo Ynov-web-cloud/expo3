@@ -17,8 +17,7 @@ const SignInMethod = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            await signin(email, pass);
-            // Redirection ou autre action après une connexion réussie
+            signin(email, pass);
         } catch (error) {
             setError(error.message);
         }

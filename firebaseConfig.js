@@ -7,6 +7,7 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: "AIzaSyBUX87oAKK67mJkD9SKvszeXrsAWI5Bqjw",
   authDomain: "ynov-web-cloud.firebaseapp.com",
+  databaseURL: "https://ynov-web-cloud-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "ynov-web-cloud",
   storageBucket: "ynov-web-cloud.appspot.com",
   messagingSenderId: "253627564287",

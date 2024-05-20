@@ -31,6 +31,5 @@ const styles = StyleSheet.create({
     headerLink: {
         fontFamily: "system-ui",
         margin: "10px",
-        
     }
 });

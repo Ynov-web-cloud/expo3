@@ -8,8 +8,8 @@ import app from "../firebaseConfig";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from 'expo-router';
 
-const auth = getAuth(app);
 export const signup = (email, password) => {
+    const auth = getAuth(app);
     const router = useRouter();
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -29,6 +29,8 @@ export const signup = (email, password) => {
 }
 
 export const signin = (email, password) => {
+    const auth = getAuth(app);
+    const router = useRouter();
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 
